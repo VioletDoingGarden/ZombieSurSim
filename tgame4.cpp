@@ -660,7 +660,8 @@ int RunMainGame(const std::string& playerName, bool loadSaved, SDL_Window* win, 
     const int MELEE_DAMAGE = 25; // Damage dealt by player attack
     const int MELEE_RANGE = 100; // Range of player attack
     const int MAX_ZOMBIES_ONSCREEN = 5; // Maximum zombies on screen
-    const int ZOMBIES_PER_WAVE[] = {15, 20, 25, 30, 35}; // Zombies per wave
+    const int ZOMBIES_PER_WAVE[] = {10, 10, 10, 10, 1}; // Zombies per wave
+    // const int ZOMBIES_PER_WAVE[] = {0, 0, 0, 0, 1}; // Zombies per wave
     const int TOTAL_WAVES = 5; // Total number of waves
     int wave = 1; // Current wave
     int zombiesToSpawn = ZOMBIES_PER_WAVE[0]; // Zombies left to spawn
